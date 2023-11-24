@@ -7,11 +7,11 @@ mod volume_descriptor;
 
 use byteorder::{BigEndian, LittleEndian, WriteBytesExt};
 
-use crate::iso::directory_entry::DirectoryEntry;
-use crate::iso::file_entry::{FileEntry, FileType};
-use crate::iso::utils::SECTOR_SIZE;
-use crate::iso::utils::{LOGIC_SIZE, LOGIC_SIZE_U32};
-use crate::iso::volume_descriptor::VolumeDescriptor;
+use crate::directory_entry::DirectoryEntry;
+use crate::file_entry::{FileEntry, FileType};
+use crate::utils::SECTOR_SIZE;
+use crate::utils::{LOGIC_SIZE, LOGIC_SIZE_U32};
+use crate::volume_descriptor::VolumeDescriptor;
 use std::fs::File;
 use std::io::prelude::*;
 use std::io::Cursor;

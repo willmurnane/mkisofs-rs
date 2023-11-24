@@ -10,6 +10,10 @@ repository = "https://github.com/Thog/mkisofs-rs"
 keywords = ["iso9660", "mkisofs"]
 categories = ["development-tools", "command-line-utilities", "filesystem"]
 
+[lib]
+name = "mkisofs"
+path = "src/iso/lib.rs"
+
 [dependencies]
 byteorder = "1"
 chrono = "0.4"

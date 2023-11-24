@@ -5,11 +5,9 @@ extern crate structopt;
 
 use structopt::StructOpt;
 
-mod iso;
-
-use crate::iso::option::Opt;
+use mkisofs::option::Opt;
 
 fn main() {
     let mut opt = Opt::from_args();
-    iso::create_iso(&mut opt).unwrap();
+    mkisofs::create_iso(&mut opt).unwrap();
 }

@@ -1,9 +1,9 @@
 use byteorder::{BigEndian, LittleEndian, WriteBytesExt};
 use chrono::prelude::*;
 
-use crate::iso::directory_entry::DirectoryEntry;
-use crate::iso::file_entry::FileEntry;
-use crate::iso::utils::LOGIC_SIZE_U16;
+use crate::directory_entry::DirectoryEntry;
+use crate::file_entry::FileEntry;
+use crate::utils::LOGIC_SIZE_U16;
 
 use std::io::prelude::*;
 

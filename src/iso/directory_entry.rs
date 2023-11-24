@@ -1,6 +1,6 @@
-use crate::iso::file_entry::{FileEntry, FileType};
-use crate::iso::utils;
-use crate::iso::utils::{LOGIC_SIZE, LOGIC_SIZE_I64, LOGIC_SIZE_U32};
+use crate::file_entry::{FileEntry, FileType};
+use crate::utils;
+use crate::utils::{LOGIC_SIZE, LOGIC_SIZE_I64, LOGIC_SIZE_U32};
 use byteorder::{BigEndian, ByteOrder, LittleEndian, WriteBytesExt};
 use chrono::prelude::*;
 
